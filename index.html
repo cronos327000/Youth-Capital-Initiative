@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="FW3GoXSoBq-BKRF_DxPsWgKgYz7j5QCpUR9hZDhmiFM" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Capital Initiative | Financial Literacy & Investment Strategy Challenge 2026</title>
+  <meta name="description"
+    content="Official website for Youth Capital Initiative Financial Literacy & Investment Strategy Challenge 2026. High school competition, $5 registration fee, and syllabus.">
+
+  <!-- Google Fonts: Inter + Montserrat + Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=20260928_direct_hero">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+
+<body class="bg-obsidian grain">
+
+  <!-- ENTRY GATE OVERLAY -->
+  <div class="entry-gate" id="entryGate">
+    <div class="gate-bg-glow gate-glow-1"></div>
+    <div class="gate-bg-glow gate-glow-2"></div>
+    <div class="gate-grid-overlay"></div>
+    <div class="gate-content">
+      <div class="gate-logo-wrap">
+        <img src="logo.svg" alt="Youth Capital Initiative SSR Logo" class="ssr-logo ssr-logo--gate">
+      </div>
+      <div class="gate-badge"><span class="pulse-dot"></span> GIED 2026</div>
+      <h1 class="gate-title">YOUTH CAPITAL <span class="accent-emerald">INITIATIVE</span></h1>
+      <p class="gate-subtitle">Financial Literacy &amp; Investment Strategy Challenge 2026</p>
+      <p class="gate-tagline"><i class="fa-solid fa-medal text-gold"></i> GRADES 9TH – 12TH &nbsp;•&nbsp; GLOBAL OPEN
+        &nbsp;•&nbsp; $5 ENTRY</p>
+      <button class="gate-enter-btn" id="gateEnterBtn" onclick="closeGate()">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <p class="gate-enter-label">Click to enter</p>
+    </div>
+  </div>
+
+  <!-- Sticky Site Header (ticker + navbar together) -->
+  <div class="site-header">
+    <!-- Live Marquee Ticker Bar -->
+    <div class="ticker-bar">
+      <div class="ticker-track">
+        <div class="ticker-item"><span class="badge-live"><i class="fa-solid fa-circle-dot blink"></i> LIVE NOW</span>
+          Youth Capital Initiative Financial Literacy Challenge 2026</div>
+        <div class="ticker-item"><span class="badge-live"><i class="fa-solid fa-location-dot"></i> India Registrations:
+            <strong>OPEN CURRENTLY</strong></span></div>
+        <div class="ticker-item"><span class="badge-upcoming-ticker"><i class="fa-solid fa-globe"></i> International
+            Registrations: Opening in a Few Days</span></div>
+        <div class="ticker-item"><i class="fa-solid fa-dollar-sign text-emerald"></i> Registration Fee: <strong>$5 USD
+            Per Entry</strong></div>
+        <div class="ticker-item"><i class="fa-solid fa-users text-gold"></i> Individual (1) or Team (2–4 Students)</div>
+        <div class="ticker-item"><i class="fa-solid fa-calendar text-emerald"></i> Registration Deadline: October 21,
+          2026</div>
+        <div class="ticker-item"><i class="fa-brands fa-instagram text-pink"></i> Follow Us on Instagram:
+          @youthcapitalinitiativessr</div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-brand">
+          <div class="brand-logo-icon">
+            <img src="logo.svg" alt="Youth Capital Initiative SSR Logo" class="ssr-logo ssr-logo--nav">
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">YOUTH CAPITAL</span>
+            <span class="brand-accent">INITIATIVE</span>
+            <span class="brand-subtitle">CHALLENGE 2026</span>
+          </div>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#timeline" class="nav-link">Timeline</a>
+          <a href="#challenge" class="nav-link">The Challenge</a>
+          <a href="#assets" class="nav-link">Assets</a>
+          <a href="#workshop" class="nav-link">Syllabus</a>
+          <a href="#simulator" class="nav-link">Simulator</a>
+          <a href="#faqs" class="nav-link">FAQs</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="https://forms.gle/jYw4FXQfJhXFeBdu8" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-sm glow-emerald">
+            <i class="fa-solid fa-paper-plane"></i> Register ($5)
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+
+      <!-- Hero Text Column -->
+      <div class="hero-text-content reveal-up">
+        <div class="hero-badge-pill">
+          <span class="pulse-dot"></span>
+          <span>YOUTH CAPITAL INITIATIVE • COMPETITION 2026 &bull; GRADES 9TH – 12TH</span>
+        </div>
+
+        <h1 class="hero-title">
+          Building an <span class="gradient-text-emerald">Investment Portfolio</span> for the Future
+        </h1>
+
+        <p class="hero-subtitle">
+          Youth Capital Initiative is a student-led initiative empowering young minds with financial literacy, practical
+          market wisdom, and strategic investment decision-making.
+        </p>
+
+        <!-- Live Countdown Timer Card -->
+        <div class="countdown-glass-card">
+          <div class="countdown-hdr">
+            <span class="cd-title"><i class="fa-regular fa-clock text-emerald"></i> REGISTRATION CLOSES IN</span>
+            <span class="cd-target">OCTOBER 21, 2026</span>
+          </div>
+          <div class="countdown-grid" id="countdown">
+            <div class="time-box">
+              <span class="time-val" id="cd-days">00</span>
+              <span class="time-lbl">DAYS</span>
+            </div>
+            <div class="time-colon">:</div>
+            <div class="time-box">
+              <span class="time-val" id="cd-hours">00</span>
+              <span class="time-lbl">HOURS</span>
+            </div>
+            <div class="time-colon">:</div>
+            <div class="time-box">
+              <span class="time-val" id="cd-mins">00</span>
+              <span class="time-lbl">MINS</span>
+            </div>
+            <div class="time-colon">:</div>
+            <div class="time-box">
+              <span class="time-val" id="cd-secs">00</span>
+              <span class="time-lbl">SECS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Registration Status Dual Card -->
+        <div class="registration-status-card">
+          <div class="reg-status-pill reg-status--open">
+            <span class="reg-pulse reg-pulse--green"></span>
+            <div class="reg-status-info">
+              <span class="reg-country"><i class="fa-solid fa-location-dot"></i> India</span>
+              <span class="reg-state">Registrations OPEN Currently</span>
+            </div>
+            <span class="reg-badge-tag open-tag">Active</span>
+          </div>
+          <div class="reg-status-divider"></div>
+          <div class="reg-status-pill reg-status--pending">
+            <span class="reg-pulse reg-pulse--cyan"></span>
+            <div class="reg-status-info">
+              <span class="reg-country"><i class="fa-solid fa-globe"></i> International</span>
+              <span class="reg-state">Opening in a few days</span>
+            </div>
+            <span class="reg-badge-tag pending-tag">Coming Soon</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="https://forms.gle/jYw4FXQfJhXFeBdu8" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-lg shadow-emerald">
+            <i class="fa-solid fa-paper-plane"></i> Register Now (India Open)
+          </a>
+          <a href="#workshop" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-list-check"></i> View Syllabus
+          </a>
+        </div>
+        <p class="hero-reg-note">
+          <i class="fa-solid fa-circle-info text-cyan"></i> Registrations for India are currently <strong>OPEN</strong>.
+          International registrations will open in a few days.
+        </p>
+      </div>
+
+      <!-- Hero Interactive Preview Window -->
+      <div class="hero-visual-column reveal-scale" data-delay="0.2">
+        <div class="glass-card hero-preview-window">
+          <div class="window-bar">
+            <div class="window-controls">
+              <span class="control-dot close"></span>
+              <span class="control-dot minimize"></span>
+              <span class="control-dot expand"></span>
+            </div>
+            <span class="window-tag"><i class="fa-solid fa-shield-halved text-emerald"></i> Youth Capital Initiative
+              Matrix</span>
+            <span class="window-badge">$5 ENTRY</span>
+          </div>
+
+          <div class="window-body">
+            <div class="metrics-row">
+              <div class="metric-card">
+                <span class="m-lbl">Entry Fee</span>
+                <span class="m-val text-emerald">$5 USD</span>
+              </div>
+              <div class="metric-card">
+                <span class="m-lbl">Eligibility</span>
+                <span class="m-val">Grades 9–12</span>
+              </div>
+              <div class="metric-card">
+                <span class="m-lbl">Team Size</span>
+                <span class="m-val text-cyan">1 – 4</span>
+              </div>
+            </div>
+
+            <!-- Live Hero Donut Chart -->
+            <div class="hero-chart-box">
+              <canvas id="heroAllocationChart"></canvas>
+            </div>
+
+            <div class="window-tag-pills">
+              <span class="win-pill"><i class="fa-solid fa-check text-emerald"></i> Research Justified</span>
+              <span class="win-pill"><i class="fa-solid fa-scale-balanced text-cyan"></i> Risk Control</span>
+              <span class="win-pill"><i class="fa-solid fa-graduation-cap text-gold"></i> 7 Modules</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Key Statistics Banner -->
+  <section class="stats-strip">
+    <div class="container stats-grid stagger-children">
+      <div class="stat-card card-tilt glass-card reveal">
+        <div class="stat-icon-wrapper bg-emerald-glow"><i class="fa-solid fa-user-graduate text-emerald"></i></div>
+        <div>
+          <h3 class="stat-num" data-flap="9th – 12th">9th – 12th</h3>
+          <p class="stat-lbl">Eligible Grades</p>
+        </div>
+      </div>
+      <div class="stat-card card-tilt glass-card reveal" data-delay="0.1">
+        <div class="stat-icon-wrapper bg-cyan-glow"><i class="fa-solid fa-dollar-sign text-cyan"></i></div>
+        <div>
+          <h3 class="stat-num" data-flap="$5 USD">$5 USD</h3>
+          <p class="stat-lbl">Entry Fee Per Entry</p>
+        </div>
+      </div>
+      <div class="stat-card card-tilt glass-card reveal" data-delay="0.2">
+        <div class="stat-icon-wrapper bg-gold-glow"><i class="fa-solid fa-users text-gold"></i></div>
+        <div>
+          <h3 class="stat-num" data-flap="1 – 4">1 – 4</h3>
+          <p class="stat-lbl">Students Per Entry</p>
+        </div>
+      </div>
+      <div class="stat-card card-tilt glass-card reveal" data-delay="0.3">
+        <div class="stat-icon-wrapper bg-purple-glow"><i class="fa-solid fa-book-open text-purple"></i></div>
+        <div>
+          <h3 class="stat-num" data-flap="7 Parts">7 Parts</h3>
+          <p class="stat-lbl">Workshop Syllabus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About, Mission & Vision Section -->
+  <section class="section-padding bg-slate-navy" id="about">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-compass"></i> ABOUT US</span>
+        <h2 class="section-title">Empowering Future Financial Leaders</h2>
+        <p class="section-subtitle">Youth Capital Initiative is dedicated to bridging the gap between traditional
+          education
+          and real-world financial wisdom.</p>
+      </div>
+
+      <div class="grid-3-col gap-lg stagger-children">
+        <!-- Mission Card -->
+        <div class="glass-card card-hover-lift card-tilt border-top-emerald pd-lg reveal">
+          <div class="icon-circle bg-emerald-glow margin-bottom-md">
+            <i class="fa-solid fa-bullseye text-emerald"></i>
+          </div>
+          <h3 class="card-title">Our Mission</h3>
+          <p class="card-desc">
+            To empower the next generation of financially informed and economically aware individuals by providing
+            accessible financial education, practical investment knowledge, and real-world learning opportunities
+            through workshops, competitions, and collaborative programs.
+          </p>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="glass-card card-hover-lift card-tilt border-top-cyan pd-lg reveal" data-delay="0.15">
+          <div class="icon-circle bg-cyan-glow margin-bottom-md">
+            <i class="fa-solid fa-eye text-cyan"></i>
+          </div>
+          <h3 class="card-title">Our Vision</h3>
+          <p class="card-desc">
+            To build a global community of young learners who possess the knowledge, critical thinking skills, and
+            confidence to make informed financial decisions, contribute to economic progress, and become responsible
+            future leaders in an evolving economy.
+          </p>
+        </div>
+
+        <!-- About Us Card -->
+        <div class="glass-card card-hover-lift card-tilt border-top-gold pd-lg reveal" data-delay="0.3">
+          <div class="icon-circle bg-gold-glow margin-bottom-md">
+            <i class="fa-solid fa-handshake text-gold"></i>
+          </div>
+          <h3 class="card-title">About Youth Capital Initiative</h3>
+          <p class="card-desc">
+            Youth Capital Initiative is a student-led initiative dedicated to introducing high school students to
+            personal
+            finance, investing, entrepreneurship, economics, and strategic decision-making through practical, hands-on
+            learning experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 Core Pillars -->
+      <div class="margin-top-xl grid-4-col gap-md stagger-children">
+        <div class="pillar-card glass-card">
+          <span class="p-num">01</span>
+          <h4>Evidence-Based</h4>
+          <p>Basing investment decisions on rigorous research and data rather than emotion.</p>
+        </div>
+        <div class="pillar-card glass-card">
+          <span class="p-num">02</span>
+          <h4>Strategic Discipline</h4>
+          <p>Prioritizing long-term sustainability and risk management over short-term speculation.</p>
+        </div>
+        <div class="pillar-card glass-card">
+          <span class="p-num">03</span>
+          <h4>Behavioral Awareness</h4>
+          <p>Identifying psychological biases like FOMO, herd mentality, and overconfidence.</p>
+        </div>
+        <div class="pillar-card glass-card">
+          <span class="p-num">04</span>
+          <h4>Global Community</h4>
+          <p>Connecting ambitious high school students across countries to collaborate and compete.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competition Roadmap Timeline -->
+  <section class="section-padding" id="timeline">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> COMPETITION ROADMAP</span>
+        <h2 class="section-title">Timeline & Key Dates 2026</h2>
+        <p class="section-subtitle">Key dates for the Youth Capital Initiative Financial Literacy & Investment Challenge
+          2026.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1 -->
+        <div class="timeline-row active reveal">
+          <div class="timeline-node">
+            <i class="fa-solid fa-door-open"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="t-date"><i class="fa-solid fa-calendar-check"></i> September 28, 2026</div>
+            <h4 class="t-title">Registration Opens</h4>
+            <p class="t-desc">
+              <strong>India Registrations:</strong> Currently <strong>OPEN</strong> via Google Form ($5 USD per
+              entry).<br>
+              <strong>International Registrations:</strong> Will open in a few days — stay tuned!
+            </p>
+            <span class="badge-stage active"><i class="fa-solid fa-circle-play"></i> INDIA OPEN &bull; INTL IN A FEW
+              DAYS</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-row reveal" data-delay="0.1">
+          <div class="timeline-node">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="t-date"><i class="fa-solid fa-calendar-xmark"></i> October 21, 2026</div>
+            <h4 class="t-title">Registration Closes</h4>
+            <p class="t-desc">Final deadline to submit participant details and team entries.</p>
+            <span class="badge-stage upcoming">UPCOMING</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-row">
+          <div class="timeline-node">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="t-date"><i class="fa-solid fa-calendar-day"></i> October 22, 2026</div>
+            <h4 class="t-title">Financial Literacy Workshop</h4>
+            <p class="t-desc">Educational workshop introducing participants to key concepts in personal finance,
+              investing, and portfolio management.</p>
+            <span class="badge-stage upcoming">UPCOMING</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-row">
+          <div class="timeline-node">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="t-date"><i class="fa-solid fa-calendar-star"></i> October 23, 2026</div>
+            <h4 class="t-title">Competition Launch</h4>
+            <p class="t-desc">Official launch of the Investment Challenge. Participants begin portfolio construction.
+            </p>
+            <span class="badge-stage upcoming">UPCOMING</span>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-row">
+          <div class="timeline-node">
+            <i class="fa-solid fa-file-arrow-up"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="t-date"><i class="fa-solid fa-calendar-check"></i> November 16, 2026</div>
+            <h4 class="t-title">Submission Deadline</h4>
+            <p class="timeline-desc">Final investment portfolio, strategy rationale, and research justification
+              submitted for judging.</p>
+            <span class="badge-stage upcoming">UPCOMING</span>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="timeline-row">
+          <div class="timeline-node">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="t-date"><i class="fa-solid fa-award"></i> November 21, 2026</div>
+            <h4 class="t-title">Finalist Announcement</h4>
+            <p class="t-desc">Global evaluation panel reveals top strategic portfolios and competition winners.</p>
+            <span class="badge-stage upcoming">FINALE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge Theme & Evaluation Rubric -->
+  <section class="section-padding bg-slate-navy" id="challenge">
+    <div class="container">
+      <div class="grid-2-col gap-xl align-center">
+        <div class="reveal">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> THE COMPETITION BRIEF</span>
+          <h2 class="section-title">Theme: Building an Investment Portfolio for the Future</h2>
+          <p class="lead-text">
+            Participants will construct a hypothetical investment portfolio and develop a clear investment strategy
+            based on their market outlook, risk tolerance, and financial objectives.
+          </p>
+          <p class="body-text margin-top-xs">
+            The objective is <strong>not to maximize short-term returns</strong>, but to demonstrate sound investment
+            reasoning, strategic thinking, effective risk management, and portfolio sustainability.
+          </p>
+
+          <div class="key-takeaways-list margin-top-md">
+            <div class="takeaway-item">
+              <i class="fa-solid fa-circle-check text-emerald"></i>
+              <div>
+                <strong>Virtual Capital Allocation</strong>
+                <span>Construct and manage a hypothetical portfolio across permitted publicly traded assets.</span>
+              </div>
+            </div>
+            <div class="takeaway-item">
+              <i class="fa-solid fa-circle-check text-emerald"></i>
+              <div>
+                <strong>Evidence & Justification</strong>
+                <span>Defend asset choices using research, market analysis, and clear reasoning.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card pd-lg border-emerald reveal" data-delay="0.2">
+          <h3 class="card-title margin-bottom-md"><i class="fa-solid fa-clipboard-check text-emerald"></i> Judging
+            Criteria</h3>
+          <div class="evaluation-grid">
+            <div class="eval-item">
+              <div class="eval-hdr">
+                <span class="eval-t">1. Understanding of the Problem</span>
+              </div>
+              <p class="eval-d">Understanding of core financial concepts and market context.</p>
+            </div>
+            <div class="eval-item">
+              <div class="eval-hdr">
+                <span class="eval-t">2. Quality of Research</span>
+              </div>
+              <p class="eval-d">Evidence-based research and credible data sources.</p>
+            </div>
+            <div class="eval-item">
+              <div class="eval-hdr">
+                <span class="eval-t">3. Creativity & Innovation</span>
+              </div>
+              <p class="eval-d">Innovative problem-solving and unique portfolio insights.</p>
+            </div>
+            <div class="eval-item">
+              <div class="eval-hdr">
+                <span class="eval-t">4. Feasibility of Solution</span>
+              </div>
+              <p class="eval-d">Practical realism, diversification, and long-term risk control.</p>
+            </div>
+            <div class="eval-item">
+              <div class="eval-hdr">
+                <span class="eval-t">5. Overall Presentation</span>
+              </div>
+              <p class="eval-d">Clarity, structure, and communication of investment decisions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eligibility & Team Size Rules -->
+      <div class="margin-top-xl glass-card pd-lg border-cyan">
+        <div class="grid-2-col gap-lg align-center">
+          <div>
+            <h3><i class="fa-solid fa-user-shield text-cyan"></i> Eligibility & Team Guidelines</h3>
+            <ul class="styled-list margin-top-sm">
+              <li><i class="fa-solid fa-graduation-cap text-cyan"></i> <strong>Eligibility:</strong> Open to students
+                currently enrolled in high school (9th–12th grade).</li>
+              <li><i class="fa-solid fa-location-dot text-emerald"></i> <strong>India Registrations:</strong> Currently
+                <strong>OPEN</strong>.
+              </li>
+              <li><i class="fa-solid fa-globe text-cyan"></i> <strong>International Registrations:</strong> Will open in
+                a few days.</li>
+              <li><i class="fa-solid fa-users text-cyan"></i> <strong>Team Size:</strong> Individual Participation (1
+                student) OR Team Participation (2–4 students).</li>
+              <li><i class="fa-solid fa-shield text-cyan"></i> <strong>Constraint:</strong> Each participant may only be
+                part of one team.</li>
+              <li><i class="fa-solid fa-certificate text-cyan"></i> <strong>Originality:</strong> All submissions must
+                be original work created by participants.</li>
+            </ul>
+          </div>
+
+          <div class="text-center">
+            <div class="fee-highlight-box">
+              <span class="fee-num">$5 USD</span>
+              <span class="fee-lbl">REGISTRATION FEE PER ENTRY</span>
+              <span class="fee-sub">Covers Individual (1) or Team (2–4)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Permitted Asset Classes Grid -->
+  <section class="section-padding" id="assets">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> PERMITTED ASSET CLASSES</span>
+        <h2 class="section-title">Portfolio Building Blocks</h2>
+        <p class="section-subtitle">Participants may allocate hypothetical capital across the following publicly traded
+          securities:</p>
+      </div>
+
+      <div class="grid-3-col gap-md">
+        <div class="glass-card asset-box card-hover-lift">
+          <div class="asset-icon-box bg-emerald-glow"><i class="fa-solid fa-chart-line text-emerald"></i></div>
+          <h3>Stocks</h3>
+          <p>Ownership in a company.</p>
+        </div>
+
+        <div class="glass-card asset-box card-hover-lift">
+          <div class="asset-icon-box bg-cyan-glow"><i class="fa-solid fa-cubes text-cyan"></i></div>
+          <h3>ETFs</h3>
+          <p>Basket of stocks.</p>
+        </div>
+
+        <div class="glass-card asset-box card-hover-lift">
+          <div class="asset-icon-box bg-gold-glow"><i class="fa-solid fa-vault text-gold"></i></div>
+          <h3>Bonds</h3>
+          <p>Loans to governments or companies.</p>
+        </div>
+
+        <div class="glass-card asset-box card-hover-lift">
+          <div class="asset-icon-box bg-purple-glow"><i class="fa-solid fa-building text-purple"></i></div>
+          <h3>REITs</h3>
+          <p>Real estate exposure.</p>
+        </div>
+
+        <div class="glass-card asset-box card-hover-lift">
+          <div class="asset-icon-box bg-amber-glow"><i class="fa-solid fa-coins text-amber"></i></div>
+          <h3>Commodities</h3>
+          <p>Physical raw materials & precious metals.</p>
+        </div>
+
+        <div class="glass-card asset-box card-hover-lift">
+          <div class="asset-icon-box bg-slate-glow"><i class="fa-solid fa-money-bill-wave text-muted"></i></div>
+          <h3>Cash</h3>
+          <p>Low risk, low return reserves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOP SYLLABUS SECTION (TITLES ONLY) -->
+  <section class="section-padding bg-slate-navy" id="workshop">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> EDUCATIONAL WORKSHOP</span>
+        <h2 class="section-title">Workshop Syllabus</h2>
+        <p class="section-subtitle">Curriculum outline for the Youth Capital Initiative Financial Literacy & Investment
+          Workshop.</p>
+      </div>
+
+      <!-- Clean Syllabus Titles Grid -->
+      <div class="workshop-titles-grid stagger-children">
+
+        <!-- Module 1 -->
+        <div class="glass-card module-title-card border-top-emerald card-hover-lift card-tilt reveal">
+          <div class="module-num-badge">01</div>
+          <h3>Why Investing Matters</h3>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="glass-card module-title-card border-top-cyan card-hover-lift card-tilt reveal" data-delay="0.1">
+          <div class="module-num-badge">02</div>
+          <h3>Asset Classes</h3>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="glass-card module-title-card border-top-gold card-hover-lift card-tilt reveal" data-delay="0.2">
+          <div class="module-num-badge">03</div>
+          <h3>Risk vs Return</h3>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="glass-card module-title-card border-top-emerald card-hover-lift card-tilt reveal" data-delay="0.1">
+          <div class="module-num-badge">04</div>
+          <h3>Building a Portfolio</h3>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="glass-card module-title-card border-top-cyan card-hover-lift card-tilt reveal" data-delay="0.2">
+          <div class="module-num-badge">05</div>
+          <h3>Researching Investments</h3>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="glass-card module-title-card border-top-gold card-hover-lift card-tilt reveal" data-delay="0.3">
+          <div class="module-num-badge">06</div>
+          <h3>Common Mistakes</h3>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="glass-card module-title-card border-top-emerald card-hover-lift centered-module">
+          <div class="module-num-badge">07</div>
+          <h3>Competition Brief</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Portfolio Allocation Workbench Simulator -->
+  <section class="section-padding" id="simulator">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-sliders"></i> INTERACTIVE WORKBENCH</span>
+        <h2 class="section-title">Portfolio Allocation Simulator</h2>
+        <p class="section-subtitle">Test your strategic asset allocation in real-time and analyze your risk profile
+          before submitting.</p>
+      </div>
+
+      <div class="simulator-card glass-card pd-lg">
+        <div class="grid-2-col gap-xl">
+
+          <!-- Slider Controls -->
+          <div class="sim-controls">
+            <h3 class="margin-bottom-md"><i class="fa-solid fa-sliders text-emerald"></i> Adjust Asset Allocation (%)
+            </h3>
+
+            <div class="sim-slider-row">
+              <div class="slider-info">
+                <span><i class="fa-solid fa-chart-line text-emerald"></i> Stocks</span>
+                <span class="slider-value text-emerald" id="val-stocks">40%</span>
+              </div>
+              <input type="range" id="sim-stocks" min="0" max="100" value="40" oninput="updateSimChart()">
+            </div>
+
+            <div class="sim-slider-row">
+              <div class="slider-info">
+                <span><i class="fa-solid fa-cubes text-cyan"></i> ETFs</span>
+                <span class="slider-value text-cyan" id="val-etfs">30%</span>
+              </div>
+              <input type="range" id="sim-etfs" min="0" max="100" value="30" oninput="updateSimChart()">
+            </div>
+
+            <div class="sim-slider-row">
+              <div class="slider-info">
+                <span><i class="fa-solid fa-vault text-gold"></i> Bonds</span>
+                <span class="slider-value text-gold" id="val-bonds">15%</span>
+              </div>
+              <input type="range" id="sim-bonds" min="0" max="100" value="15" oninput="updateSimChart()">
+            </div>
+
+            <div class="sim-slider-row">
+              <div class="slider-info">
+                <span><i class="fa-solid fa-building text-purple"></i> REITs</span>
+                <span class="slider-value text-purple" id="val-reits">10%</span>
+              </div>
+              <input type="range" id="sim-reits" min="0" max="100" value="10" oninput="updateSimChart()">
+            </div>
+
+            <div class="sim-slider-row">
+              <div class="slider-info">
+                <span><i class="fa-solid fa-coins text-amber"></i> Commodities</span>
+                <span class="slider-value text-amber" id="val-commodities">5%</span>
+              </div>
+              <input type="range" id="sim-commodities" min="0" max="100" value="5" oninput="updateSimChart()">
+            </div>
+
+            <div class="total-allocation-bar margin-top-md">
+              <div class="bar-lbl-row">
+                <span>Total Capital Allocated:</span>
+                <strong id="sim-total-val">100%</strong>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="sim-total-bar" style="width: 100%;"></div>
+              </div>
+              <span class="text-xs text-muted" id="sim-alloc-msg">Allocated capital matches 100% requirement!</span>
+            </div>
+          </div>
+
+          <!-- Chart & Risk Diagnostic -->
+          <div class="sim-analytics">
+            <h3 class="margin-bottom-md"><i class="fa-solid fa-chart-pie text-cyan"></i> Live Allocation Breakdown</h3>
+            <div class="sim-chart-box">
+              <canvas id="simPieChart"></canvas>
+            </div>
+
+            <div class="diagnostic-card margin-top-md" id="simDiagnostic">
+              <div class="diag-header">
+                <span class="diag-label">Strategy Classification:</span>
+                <span class="diag-badge" id="diag-badge">BALANCED PORTFOLIO</span>
+              </div>
+              <p class="diag-text" id="diag-text">
+                Your allocation offers a solid balance between long-term equity growth and fixed income stability.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECT GOOGLE FORM REGISTRATION PORTAL ($5 FEE) -->
+  <section class="section-padding bg-slate-navy" id="register">
+    <div class="container text-center">
+      <div class="section-header text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-pen-to-square"></i> OFFICIAL REGISTRATION</span>
+        <h2 class="section-title">Take on the Challenge</h2>
+        <p class="section-subtitle">Complete your application via the official Youth Capital Initiative Google Form.</p>
+      </div>
+
+      <div class="glass-card pd-lg border-emerald max-w-lg center-margin">
+        <div class="registration-cta-box">
+
+          <div class="fee-badge-pill margin-bottom-md">
+            <span class="f-num">$5</span>
+            <span class="f-txt">REGISTRATION FEE PER ENTRY</span>
+          </div>
+
+          <p class="text-muted margin-bottom-lg font-md">
+            Open to High School students (Grades 9th–12th) globally. Compete individually or in teams of 2 to 4
+            students.
+          </p>
+
+          <a href="https://forms.gle/jYw4FXQfJhXFeBdu8" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-lg shadow-emerald btn-block glow-emerald">
+            <i class="fa-solid fa-paper-plane"></i> Open Registration Form (Google Form)
+          </a>
+
+          <div class="link-verify-row margin-top-md">
+            <i class="fa-solid fa-lock text-emerald"></i> Direct Link: <code>https://forms.gle/jYw4FXQfJhXFeBdu8</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Searchable FAQs -->
+  <section class="section-padding" id="faqs">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> ASKED & ANSWERED</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got questions? Find instant answers to eligibility, fees, dates, and guidelines.</p>
+      </div>
+
+      <!-- FAQ Search -->
+      <div class="faq-search-wrapper max-w-md center-margin margin-bottom-lg">
+        <i class="fa-solid fa-magnifying-glass search-ic"></i>
+        <input type="text" id="faqSearch" placeholder="Search questions (e.g., fee, eligibility, team size, form)..."
+          oninput="filterFaqs()">
+      </div>
+
+      <div class="faq-accordion-list max-w-lg center-margin" id="faqList">
+
+        <div class="faq-card glass-card">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>What is the registration fee for the competition?</span>
+            <i class="fa-solid fa-plus faq-ic"></i>
+          </div>
+          <div class="faq-a">
+            <p>The registration fee is <strong>$5 USD</strong> per entry. This covers individual participation (1
+              student) or a team entry (2 to 4 students).</p>
+          </div>
+        </div>
+
+        <div class="faq-card glass-card">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Where do I submit my registration?</span>
+            <i class="fa-solid fa-plus faq-ic"></i>
+          </div>
+          <div class="faq-a">
+            <p>Registrations for <strong>India are OPEN currently</strong> via the official Google Form: <a
+                href="https://forms.gle/jYw4FXQfJhXFeBdu8" target="_blank" rel="noopener noreferrer"
+                class="text-emerald">Register Here</a>.</p>
+            <p class="margin-top-xs"><strong>International participants:</strong> International registrations will open
+              in a few days. Follow <a href="https://www.instagram.com/youthcapitalinitiativessr/" target="_blank"
+                class="text-pink">@youthcapitalinitiativessr</a> for updates.</p>
+          </div>
+        </div>
+
+        <div class="faq-card glass-card">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Who is eligible to participate in the Challenge?</span>
+            <i class="fa-solid fa-plus faq-ic"></i>
+          </div>
+          <div class="faq-a">
+            <p>The competition is open to students currently enrolled in High School (9th to 12th grade) from any
+              country.</p>
+          </div>
+        </div>
+
+        <div class="faq-card glass-card">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Can I compete individually or as part of a team?</span>
+            <i class="fa-solid fa-plus faq-ic"></i>
+          </div>
+          <div class="faq-a">
+            <p>You may participate individually (1 student) or in a team of 2 to 4 students. Each participant may only
+              be part of one team.</p>
+          </div>
+        </div>
+
+        <div class="faq-card glass-card">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>What modules are covered in the Financial Literacy Workshop?</span>
+            <i class="fa-solid fa-plus faq-ic"></i>
+          </div>
+          <div class="faq-a">
+            <p>The workshop syllabus covers 7 key modules: Why Investing Matters, Asset Classes, Risk vs Return,
+              Building a Portfolio, Researching Investments, Common Mistakes, and the Competition Brief.</p>
+          </div>
+        </div>
+
+        <div class="faq-card glass-card">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>What asset classes are permitted in the competition?</span>
+            <i class="fa-solid fa-plus faq-ic"></i>
+          </div>
+          <div class="faq-a">
+            <p>Participants may construct portfolios using Stocks, Exchange-Traded Funds (ETFs), Bonds, Commodities,
+              Real Estate Investment Trusts (REITs), and Cash reserves.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Secretariat Contact Section -->
+  <section class="section-padding bg-slate-navy" id="contact">
+    <div class="container">
+      <div class="glass-card pd-lg border-gold text-center">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> CONTACT US</span>
+        <h2 class="margin-top-xs">Reach Out to Youth Capital Initiative</h2>
+        <p class="text-muted max-w-md center-margin margin-bottom-md">
+          Have questions about the competition or workshop? Connect with our team directly.
+        </p>
+
+        <div class="contact-buttons-row">
+          <a href="mailto:youthcapitalinitiativessr@gmail.com" class="contact-pill-btn">
+            <i class="fa-solid fa-envelope text-gold"></i>
+            <span>youthcapitalinitiativessr@gmail.com</span>
+          </a>
+
+          <a href="https://www.instagram.com/youthcapitalinitiativessr/" target="_blank" rel="noopener noreferrer"
+            class="contact-pill-btn instagram-pill">
+            <i class="fa-brands fa-instagram text-pink"></i>
+            <span>@youthcapitalinitiativessr</span>
+            <i class="fa-solid fa-arrow-up-right-from-square copy-ic"></i>
+          </a>
+        </div>
+
+        <div class="disclaimer-note margin-top-lg text-xs text-muted">
+          <i class="fa-solid fa-triangle-exclamation"></i> <strong>Important Educational Note:</strong> The challenge
+          and supporting workshop materials are intended solely for educational purposes. Nothing presented during the
+          competition or workshop should be considered financial or investment advice.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Executive Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-brand-header">
+          <div class="brand-logo-icon">
+            <img src="logo.svg" alt="Youth Capital Initiative SSR Logo" class="ssr-logo ssr-logo--nav">
+          </div>
+          <div class="brand-text">
+            <span class="brand-title text-white">YOUTH CAPITAL</span>
+            <span class="brand-accent">INITIATIVE</span>
+            <p class="text-xs text-muted margin-top-xs">Financial Literacy & Investment Strategy Challenge 2026</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About Us</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#workshop">Syllabus</a>
+        <a href="#simulator">Simulator</a>
+        <a href="#contact">Contact Us</a>
+        <a href="https://forms.gle/jYw4FXQfJhXFeBdu8" target="_blank" rel="noopener noreferrer">Register ($5)</a>
+        <a href="https://www.instagram.com/youthcapitalinitiativessr/" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-instagram"></i> @youthcapitalinitiativessr</a>
+        <a href="javascript:void(0)" onclick="triggerSecretTerminal()" class="secret-trigger"><i
+            class="fa-solid fa-terminal"></i> Terminal</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Youth Capital Initiative. Student-Led Financial Literacy Initiative.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Secret Easter Egg Terminal Modal -->
+  <div class="modal-overlay hidden" id="secretModal">
+    <div class="modal-card glass-card pd-lg border-gold terminal-style">
+      <div class="modal-hdr">
+        <h3 class="text-gold"><i class="fa-solid fa-terminal"></i> Secret Investor Terminal</h3>
+        <button class="modal-close text-gold" onclick="closeSecretModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body margin-top-md text-left">
+        <div class="terminal-box">
+          <p class="terminal-line"><span class="t-green">SYSTEM OK:</span> Quant core initialized for GIED-2026.</p>
+          <p class="terminal-line"><span class="t-cyan">ACHIEVEMENT UNLOCKED:</span> You found the hidden 0.1%
+            Secretariat Easter Egg!</p>
+          <p class="terminal-line">"The best investment you can make is an investment in yourself." — Warren Buffett</p>
+          <p class="terminal-line text-gold margin-top-sm">Email: youthcapitalinitiativessr@gmail.com | Insta: @youthcapitalinitiativessr
+          </p>
+        </div>
+        <div class="margin-top-md text-center">
+          <button class="btn btn-primary" onclick="triggerConfetti(); closeSecretModal();">
+            <i class="fa-solid fa-sparkles"></i> Launch Celebration Confetti
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
