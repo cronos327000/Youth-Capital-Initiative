@@ -14,7 +14,8 @@ let simChartInstance = null;
    1. COUNTDOWN TIMER
    ========================================================================= */
 function initCountdownTimer() {
-  var target = new Date('October 21, 2026 23:59:59').getTime();
+  // Target: October 31, 2026, 11:59 PM IST
+  var target = new Date('2026-10-31T23:59:00+05:30').getTime();
   function pad(n) { return n < 10 ? '0' + n : '' + n; }
   function update() {
     var diff = target - Date.now();
